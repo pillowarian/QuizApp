@@ -16,7 +16,7 @@ const Login = ({ onLoginSuccess = null }) => {
   const [loading, setLoading] = useState(false);
   const [submitError, setSubmitError] = useState("");
 
-  const API_BASE = "http://https://quizappnew-backend.onrender.com";
+  const API_BASE = "https://quizappnew-backend.onrender.com";
 
   // ---------------- SUBMIT ----------------
   const handleSubmit = async (ev) => {
