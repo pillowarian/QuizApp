@@ -35,7 +35,7 @@ const QuizList = () => {
         params.level = filters.level;
       }
 
-      const response = await axios.get('http://localhost:4000/api/quizzes', { params });
+      const response = await axios.get('https://quizappnew-backend.onrender.com/api/quizzes', { params });
       
       if (response.data.success) {
         setQuizzes(response.data.quizzes);
