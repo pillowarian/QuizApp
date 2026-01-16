@@ -132,7 +132,7 @@ const CreateQuiz = () => {
     try {
       const token = localStorage.getItem('authToken');
       const response = await axios.post(
-        'http://localhost:4000/api/quizzes',
+        'http://https://quizappnew-backend.onrender.com/api/quizzes',
         quizData,
         {
           headers: {
