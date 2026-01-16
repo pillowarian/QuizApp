@@ -16,10 +16,10 @@ const Leaderboard = () => {
   const fetchLeaderboard = async () => {
     setLoading(true);
     try {
-      let url = 'http://localhost:4000/api/leaderboard/global';
+      let url = 'http://https://quizappnew-backend.onrender.com/api/leaderboard/global';
       
       if (activeTab === 'technology' && selectedTech) {
-        url = `http://localhost:4000/api/leaderboard/technology/${selectedTech}`;
+        url = `http://https://quizappnew-backend.onrender.com/api/leaderboard/technology/${selectedTech}`;
       }
 
       const response = await axios.get(url);
