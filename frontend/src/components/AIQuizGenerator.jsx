@@ -25,7 +25,7 @@ const AIQuizGenerator = ({ onQuestionsGenerated }) => {
 
     setLoading(true);
     try {
-      const response = await axios.post('http://localhost:4000/api/ai/generate-from-text', {
+      const response = await axios.post('http://https://quizappnew-backend.onrender.com/api/ai/generate-from-text', {
         text: formData.text,
         numQuestions: parseInt(formData.numQuestions),
         difficulty: formData.difficulty,
