@@ -21,7 +21,7 @@ const TakeQuiz = () => {
 
   const fetchQuiz = async () => {
     try {
-      const response = await axios.get(`http://localhost:4000/api/quizzes/${id}`);
+      const response = await axios.get(`https://quizappnew-backend.onrender.com/api/quizzes/${id}`);
       
       if (response.data.success) {
         setQuiz(response.data.quiz);
