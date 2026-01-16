@@ -29,7 +29,7 @@ const Signup = ({ onSignupSuccess = null }) => {
     return e;
   };
 
-  const API_BASE = "http://localhost:4000";
+  const API_BASE = "https://quizappnew-backend.onrender.com";
 
   const handleSubmit = async (ev) => {
     ev.preventDefault();
